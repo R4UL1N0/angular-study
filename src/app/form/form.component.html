@@ -1,0 +1,26 @@
+<div class="form-container">
+    <div class="internal-container">
+        <form action="" (ngSubmit)="onSubmit()" >
+            <div class="label-container">
+                <label for="name">Write your name:</label>
+                <input type="text" id="name" [(ngModel)]="name" name="name" required>
+            </div>
+            <div class="label-container">
+                <label for="email">Write your e-mail:</label>
+                <input type="text" id="email" [(ngModel)]="email" name="email" required>
+            </div>
+            <div class="label-container"> 
+                <label for="name">Write your message:</label>
+                <textarea id="message" rows="4" [(ngModel)]="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+    
+        <div class="content-container">
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>E-mail:</strong> {{ email }}</p>
+            <p><strong>Message:</strong> {{ message }}</p>
+        </div>
+    </div>
+</div>
